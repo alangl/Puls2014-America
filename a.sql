@@ -1,4 +1,4 @@
-select noempleado, nombre, sucursal, area, puesto, diastrabajo, faltas, idstatus, observaciones, importefinal
+select nombre, sucursal, area, puesto, diastrabajo, faltas, idstatus, observaciones, importefinal
 from tbnominadetail
 where idnomina=154 and area = 'TELEFONICA' and idstatus not in (3)
 and noempleado  not in (
