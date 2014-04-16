@@ -2,8 +2,14 @@
 <html lang="es">
 <head>
 	<meta charset="utf-8" />
-	<meta description="Proyecto de la primera generación" />
+	<meta name="description" content="Proyecto de la primera generación" />
+	<meta name="viewport" content="width=device-width, minimum-scale=1, maximum-scale=1" />
 	<title>Proyecto</title>
+	<link rel="stylesheet" href="normalize.css" />
+	<link rel="stylesheet" href="estilos.css" />
+
+	<script src="prefixfree.js"></script>
+
 </head>
 <body>
 	<header>
@@ -18,15 +24,27 @@
 	<nav>
 		<ul>
 			<li><a href="#">Python</a></li>
-			<li><a href="#">HTML5</a>/<li>
+			<li><a href="#">HTML5</a></li>
 			<li><a href="#">Python</a></li>
 			<li><a href="#">Javascript</a></li>
 			<li><a href="#">Python</a></li>
 			<li id="publicar_nav">
-				<a href="#">Publicar</a>
+				<a href="#" class="icon-lapiz" id="mostrar-form">Publicar</a>
 			</li>
 		</ul>
 	</nav>
+	<form action="" id="formulario" class="formulario">
+		<input type="text" id="titulo" placeholder="Título" required />
+		<input type="url" id="url" placeholder="Link" required />
+		<input type="submit" value="Agregar" />
+	</form>
+	<aside>
+		<div id="geo"></div>
+		<video width="320" height="240" controls autoplay>
+			
+			<source src="lecturas.ogg" type="video/ogg" />
+		</video>
+	</aside>
 	<section id="contenido">
 		<article class="item">
 			<figure class="imagen_item">
@@ -45,16 +63,157 @@
 				<span class="fecha_item">
 						hace <strong>5</strong> min
 				</span>
-				<a href="#" class="comentarios_item">69</a>
-				<a href="#" class="guardar_item"></a>
 			</div>
 			<div class="votacion">
-				<a href="#" class="up"></a>
+				<a href="#" class="up icon-flecha-arriba"></a>
 				720
-				<a href="#" class="down"></a>
+				<a href="#" class="down icon-flecha-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
 			</div>
 
 		</article>
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<span class="fecha_item">
+						hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-flecha-arriba"></a>
+				720
+				<a href="#" class="down icon-flecha-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+
+		</article>
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<span class="fecha_item">
+						hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-flecha-arriba"></a>
+				720
+				<a href="#" class="down icon-flecha-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+
+		</article>
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<span class="fecha_item">
+						hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-flecha-arriba"></a>
+				720
+				<a href="#" class="down icon-flecha-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+
+		</article>
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<span class="fecha_item">
+						hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-flecha-arriba"></a>
+				720
+				<a href="#" class="down icon-flecha-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+
+		</article>
+
+		<article class="item">
+			<figure class="imagen_item">
+				<img src="imagen.jpg" />
+			</figure>
+			<h2 class="titulo_item">
+				<a href="#">
+				Título del artículo
+				</a>
+			</h2>
+			<div class="autor_item">
+				por <a href="#">Joana Muñoz</a>
+			</div>
+			<div class="datos_item">
+				<a href="#" class="tag_item">pony</a>
+				<span class="fecha_item">
+						hace <strong>5</strong> min
+				</span>
+			</div>
+			<div class="votacion">
+				<a href="#" class="up icon-flecha-arriba"></a>
+				720
+				<a href="#" class="down icon-flecha-abajo"></a>
+				<a href="#" class="comentarios_item">69</a>
+				<a href="#" class="guardar_item icon-estrella"></a>
+			</div>
+
+		</article>
+
 	</section>
 	<footer>
 		<p>
@@ -64,6 +223,10 @@
 			mejorando.la 2014
 		</p>
 	</footer>
-	
+	<script src="http://code.jquery.com/jquery-1.10.1.min.js"></script>
+
+	<script src="formulario.js"></script>
+	<script src="geo.js"></script>
+	<script src="ajax.js"></script>
 </body>
 </html>
